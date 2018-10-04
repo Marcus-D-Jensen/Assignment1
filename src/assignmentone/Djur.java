@@ -2,8 +2,8 @@ package assignmentone;
 
 public class Djur implements Imat{
     
-    private String namn;
-    private double vikt;
+    private String namn;    // Privata instansvariabler som endast kan kommas åt via getfunktioner.
+    private double vikt;    
     
     public Djur(String namn, int vikt) {
         this.namn = namn;
@@ -18,9 +18,7 @@ public class Djur implements Imat{
     }
 
     @Override
-    public void mat() {
-        System.out.println("Error... inga foderinstruktioner för klassen Djur.");
-    }
+    public void mat() {}
     
 
 }

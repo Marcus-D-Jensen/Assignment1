@@ -5,10 +5,13 @@ import javax.swing.JOptionPane;
 
 public class DjurFabrik {
     
-    private static HotellGäster guests = new HotellGäster();
+    private static HotellGäster guests = new HotellGäster();    // Private, Kan endast kommas åt inom Djurfabrik. 
+                                                                // Static så vi slipper instansiera ett object av klassen DjurFabrik.
     
     public static void RegistreraDjur (){
         
+        
+        // Polymorfism. Lagrar objekten Hund, Katt och Orm i ett Djur. 
         Djur Sixten = new Hund("Sixten", 5);
         Djur Dogge = new Hund("Dogge", 10);
         Djur Venus = new Katt("Venus", 5);
@@ -31,7 +34,7 @@ public class DjurFabrik {
         while (!rättNamn) {
             for (Djur djur : temp) {
                 if (namn.equalsIgnoreCase(djur.getNamn())) {
-                    djur.mat();
+                    djur.mat();     // Polymorfism. Kallar på Katt eller Orm's version av Djur.mat()
                     rättNamn = true; 
                     break;
                 }
