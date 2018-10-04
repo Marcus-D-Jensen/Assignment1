@@ -8,5 +8,10 @@ public class Orm extends Djur{
         super(namn, vikt);
     }
     
+    @Override
+    public void mat() {
+        
+        System.out.println("Ormen " + this.getNamn() + " ska ha 20g ormpellets");
+    }
 
 }

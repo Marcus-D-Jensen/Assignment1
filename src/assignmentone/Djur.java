@@ -2,10 +2,10 @@
 package assignmentone;
 
 
-public class Djur {
+public class Djur implements Imat{
     
     private String namn;
-    private int vikt;
+    private double vikt;
     
     public Djur(String namn, int vikt) {
         this.namn = namn;
@@ -15,9 +15,12 @@ public class Djur {
     public String getNamn() {
         return namn;
     }
-    public int getVikt() {
+    public double getVikt() {
         return vikt;         
     }
+
+    @Override
+    public void mat() {}
     
 
 }
