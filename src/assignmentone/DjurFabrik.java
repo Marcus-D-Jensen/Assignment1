@@ -7,7 +7,7 @@ public class DjurFabrik {
     
     private static HotellGäster guests = new HotellGäster();
     
-    public static void generateDjur (){
+    public static void RegistreraDjur (){
         
         Djur Sixten = new Hund("Sixten", 5);
         Djur Dogge = new Hund("Dogge", 10);
@@ -21,6 +21,7 @@ public class DjurFabrik {
         guests.addDjur(Ove);
         guests.addDjur(Hypno);
     }
+    
     
     public static void getMat (String namn) {
         
@@ -37,12 +38,8 @@ public class DjurFabrik {
             }
             if (!rättNamn) {
                 namn = JOptionPane.showInputDialog("Det djuret finns inte!");
-                
-            } else {
-                break;
-            }
             
+            } else { break; }
         }
-        
     }
 }

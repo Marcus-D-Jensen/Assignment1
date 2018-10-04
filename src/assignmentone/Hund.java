@@ -1,8 +1,6 @@
-
 package assignmentone;
 
 import javax.swing.JOptionPane;
-
 
 public class Hund extends Djur{
     
@@ -10,15 +8,9 @@ public class Hund extends Djur{
         super(namn, vikt);
     }
     
-    public String getRas() {
-        return "Hund";
-    }
-
     @Override
-    public void mat() {
-        
+    public void mat() {   
         double matVikt = (this.getVikt()*1000)/100;
-        JOptionPane.showMessageDialog(null,"Hunden " + this.getNamn() + " ska ha " + matVikt + "g Hundmat");
+        JOptionPane.showMessageDialog(null, "Hunden " + this.getNamn() + " ska ha " + matVikt + "g Hundmat");
     }
-
 }

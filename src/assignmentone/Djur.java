@@ -1,6 +1,4 @@
-
 package assignmentone;
-
 
 public class Djur implements Imat{
     
@@ -21,7 +19,7 @@ public class Djur implements Imat{
 
     @Override
     public void mat() {
-        System.out.println("Error. inga foderinstruktioner för klassen Djur.");
+        System.out.println("Error... inga foderinstruktioner för klassen Djur.");
     }
     
 

@@ -1,8 +1,6 @@
-
 package assignmentone;
 
 import java.util.*;
-
 
 public class HotellGäster {
     private List<Djur> gäster = new ArrayList();
@@ -14,5 +12,4 @@ public class HotellGäster {
     public List getHotellGäster(){
         return gäster; 
     }
-
 }
