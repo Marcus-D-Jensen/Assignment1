@@ -34,7 +34,7 @@ public class DjurFabrik {
         while (!rättNamn) {
             for (Djur djur : temp) {
                 if (namn.equalsIgnoreCase(djur.getNamn())) {
-                    djur.mat();     // Polymorfism. Kallar på Katt eller Orm's version av Djur.mat()
+                    djur.mat();     // Polymorfism. Kallar på Katt eller Orm's version av mat()
                     rättNamn = true; 
                     break;
                 }
