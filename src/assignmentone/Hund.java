@@ -1,6 +1,8 @@
 
 package assignmentone;
 
+import javax.swing.JOptionPane;
+
 
 public class Hund extends Djur{
     
@@ -14,8 +16,9 @@ public class Hund extends Djur{
 
     @Override
     public void mat() {
+        
         double matVikt = (this.getVikt()*1000)/100;
-        System.out.println("Hunden " + this.getNamn() + " ska ha " + matVikt + "g Hundmat");
+        JOptionPane.showMessageDialog(null,"Hunden " + this.getNamn() + " ska ha " + matVikt + "g Hundmat");
     }
 
 }

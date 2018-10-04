@@ -20,7 +20,9 @@ public class Djur implements Imat{
     }
 
     @Override
-    public void mat() {}
+    public void mat() {
+        System.out.println("Error. inga foderinstruktioner för klassen Djur.");
+    }
     
 
 }
