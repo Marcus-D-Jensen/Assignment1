@@ -10,7 +10,7 @@ public class Hund extends Djur{
     
     @Override
     public void mat() {   
-        double matVikt = (this.getVikt()*1000)/100;
+        double matVikt = Math.round(((this.getVikt()*1000)/100)*100.0)/100.0;
         JOptionPane.showMessageDialog(null, "Hunden " + this.getNamn() + " ska ha " + matVikt + "g Hundmat");
     }
 }
