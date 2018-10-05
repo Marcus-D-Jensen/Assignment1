@@ -5,18 +5,18 @@ import javax.swing.JOptionPane;
 
 public class Mata {
     
-    private HotellGäster guests = new HotellGäster();
+    private HotellGäster gäster = new HotellGäster();
     private String namn;
     
     public Mata (HotellGäster guests, String namn) {
-        this.guests = guests;
+        this.gäster = guests;
         this.namn = namn;
         
     }
     
     public void getMat() {
         
-        List<Djur> temp = guests.getHotellGäster();
+        List<Djur> temp = gäster.getHotellGäster();
         boolean rättNamn = false; 
         
         while (!rättNamn) {
