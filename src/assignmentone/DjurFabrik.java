@@ -28,21 +28,8 @@ public class DjurFabrik {
     
     public static void getMat (String namn) {
         
-        List<Djur> temp = guests.getHotellGäster();
-        boolean rättNamn = false; 
+        Mata mataDjur = new Mata(guests, namn);
         
-        while (!rättNamn) {
-            for (Djur djur : temp) {
-                if (namn.equalsIgnoreCase(djur.getNamn())) {
-                    djur.mat();     // Polymorfism. Kallar på Katt eller Orm's version av mat()
-                    rättNamn = true; 
-                    break;
-                }
-            }
-            if (!rättNamn) {
-                namn = JOptionPane.showInputDialog("Det djuret finns inte!");
-            
-            } else { break; }
-        }
+        mataDjur.getMat();
     }
 }
